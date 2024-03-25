@@ -3,7 +3,10 @@ def increment(x):
     return x + 1
 
 def test_failed():
-    assert increment(3) == 5
+    assert increment(3) != 5
 
 def test_passed():
     assert increment(4) == 5
+
+def test_failed_2():
+    assert increment(7) == 5
